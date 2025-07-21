@@ -70,6 +70,7 @@ svg {
   position: relative;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .explosive {
@@ -190,6 +191,7 @@ svg {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+    padding: 32px;
   }
   .container > div {
     width: 100%;
@@ -208,9 +210,15 @@ svg {
   .col3 {
     margin-top: 35px;
   }
+  .imgs {
+    align-items: center;
+  }
 }
 
 @media (max-width: 320px) {
+  .container {
+    padding: 16px !important;
+  }
   .title {
     font-size: 2rem !important;
   }
