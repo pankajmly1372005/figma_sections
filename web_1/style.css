@@ -1,0 +1,243 @@
+@font-face {
+  font-family: Avenir;
+  src: url(./assets/font/Avenir/Avenir\ Regular.ttf);
+}
+
+@font-face {
+  font-family: Avenir-book;
+  src: url(./assets/font/Avenir/Avenir\ Book.ttf);
+}
+@font-face {
+  font-family: Avenir-heavy;
+  src: url(./assets/font/Avenir/Avenir\ Heavy.ttf);
+}
+@font-face {
+  font-family: btn1;
+  src: url(./assets/font/poppins/Poppins-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 65px;
+  display: flex;
+  flex-direction: column;
+  gap: 109px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.row_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.content1 {
+  flex-shrink: 1;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.heading {
+  font-family: Avenir;
+  font-weight: 800;
+  font-size: 72px;
+  color: #252525;
+  line-height: 88px;
+  letter-spacing: 0%;
+}
+.para {
+  max-width: 586px;
+  font-family: Avenir;
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: 0%;
+  color: #252525cc;
+}
+
+#btn {
+  border-radius: 36px;
+  padding: 24px 48px;
+  font-family: btn1;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 18px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #252525;
+}
+
+.imgs {
+  flex-shrink: 1;
+  max-width: 547.66px;
+  max-height: 518.66px;
+  min-width: 547.66px;
+  min-height: 518.66px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-top: 27px;
+}
+
+.img_1 {
+  max-width: 323px;
+  max-height: 385px;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.img_2 {
+  max-width: 323px;
+  max-height: 385px;
+  position: absolute;
+
+  top: 22%;
+  right: 0%;
+}
+.imgs img {
+  border-radius: 45% 45% 0% 0%;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 40px;
+  padding: 64px;
+  background-color: #252525;
+  color: #ffffff;
+  gap: 10px;
+}
+.list div {
+  max-width: 316px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.list .header {
+  gap: 12px;
+}
+.title_1 {
+  font-family: Avenir;
+  font-weight: 800;
+  font-style: Heavy;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.List_para {
+  font-family: Avenir-book;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0%;
+}
+
+@media (max-width: 1200px) {
+  .para {
+    max-width: 100%;
+  }
+  .row_1 {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .container {
+    max-width: 1040px;
+    gap: 100px;
+  }
+  .heading {
+    font-size: 66px;
+    line-height: 65px;
+  }
+  .para {
+    font-size: 22px;
+  }
+  .imgs {
+    margin: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+  .row_1 {
+    gap: 30px;
+  }
+  .heading {
+    font-size: 55px;
+    line-height: 72px;
+  }
+  .content1 {
+    min-width: 50%;
+    gap: 35px;
+  }
+  .para {
+    font-size: 20px;
+  }
+  .imgs div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 300.67px;
+    max-height: 330.66px;
+  }
+  .list {
+    padding: 42px;
+    border-radius: 28px;
+  }
+  .list div {
+    max-width: 264px;
+  }
+  .title_1 {
+    font-size: 30px;
+  }
+  .List_para {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 32px;
+    max-width: 700px;
+  }
+  .content1 {
+    margin-top: 10px;
+  }
+  .imgs {
+    max-width: calc(60vw);
+    min-width: calc(60vw);
+  }
+}
+
+@media (max-width: 420px) {
+  .list {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+@media (max-width: 320px) {
+  .heading {
+    font-size: 26px;
+    line-height: normal;
+  }
+  .imgs {
+    margin: auto;
+    max-width: 300px;
+  }
+}
