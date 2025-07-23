@@ -154,6 +154,7 @@ body {
   display: flex;
   gap: 8px;
   flex-direction: column;
+  max-width: 235px;
 }
 
 @media (max-width: 1024px) {
